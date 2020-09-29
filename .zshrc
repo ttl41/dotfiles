@@ -12,3 +12,4 @@ ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 source ~/.zsh/zsh-syntax/zsh-syntax-highlighting.zsh
 alias v=vim
 alias t=todo.sh
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
