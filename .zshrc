@@ -1,6 +1,5 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
+toopy --onlyprint
+~/.vim/pack/default/start/gruvbox/gruvbox_256palette.sh
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
@@ -11,5 +10,8 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 source ~/.zsh/zsh-syntax/zsh-syntax-highlighting.zsh
 alias v=vim
-alias t=todo.sh
+alias t=toopy
+alias doom=$HOME/.emacs.d/bin/doom
+alias nf=neofetch
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias ytmp3='youtube-dl --extract-audio --audio-format mp3'

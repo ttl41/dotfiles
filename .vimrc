@@ -3,15 +3,16 @@ filetype indent on
 set number
 syntax on
 set mouse=a
-let g:airline_theme='base16'
-colorscheme nord
-
-" TextEdit might fail if hidden is not set.
-set hidden
-
-" Some servers have issues with backup files, see #649.
+let g:airline_theme="base16"
+autocmd vimenter * colorscheme gruvbox
+set background=dark
 set nobackup
 set nowritebackup
+set nowb
+set noswapfile
+set undolevels=1000
+" TextEdit might fail if hidden is not set.
+set hidden
 
 " Give more space for displaying messages.
 set cmdheight=2

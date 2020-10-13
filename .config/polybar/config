@@ -18,14 +18,14 @@
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #2E3440
-background-alt = #3B4252
+background = #282828
+background-alt = #3c3836
 ;foreground = ${xrdb:color7:#222}
-foreground = #ECEFF4
-foreground-alt = #ECEFF4
+foreground = #EBDBB2
+foreground-alt = #d5c4a1
 primary = #ffb52a
 secondary = #e60053
-alert = #EBCB8B 
+alert = #fabd2f 
 
 [bar/example]
 monitor = ${env:MONITOR:eDP-1-1}
@@ -57,10 +57,8 @@ font-2 = RobotoMono Nerd Font:pixelsize=12;1
 
 modules-left = date 
 modules-center = bspwm
-modules-right = xbacklight pulseaudio memory cpu temperature 
+modules-right = spotify pulseaudio
 
-tray-position = right
-tray-padding = 2
 ;tray-background = #0063ff
 
 ;wm-restack = bspwm
@@ -107,10 +105,7 @@ font-2 = RobotoMono Nerd Font:pixelsize=12;1
 
 modules-left = date 
 modules-center = bspwm
-modules-right = xbacklight pulseaudio memory cpu temperature 
-
-tray-position = right
-tray-padding = 2
+modules-right = xbacklight memory cpu temperature 
 ;tray-background = #0063ff
 
 ;wm-restack = bspwm
@@ -124,7 +119,20 @@ tray-padding = 2
 ;scroll-up = i3wm-wsnext
 ;scroll-down = i3wm-wsprev
 
+
+
 cursor-click = pointer
+tray-position = right
+tray-padding = 2
+
+[module/spotify]
+type = custom/script
+interval = 1
+format-prefix = " "
+format = <label> 
+exec = python /home/beltza/.config/polybar/spotify.py -f ' {artist}: {song}'
+format-underline = #1db954
+
 [module/xwindow]
 type = internal/xwindow
 label = %title:0:30:...%
@@ -159,7 +167,7 @@ label-unmounted-foreground = ${colors.foreground-alt}
 type = internal/bspwm
 
 label-focused =  
-label-focused-background = ${colors.background-alt}
+label-focused-background = ${colors.background}
 label-focused-underline= ${colors.primary}
 label-focused-padding = 2
 

@@ -20,8 +20,8 @@ super + Escape
 	pkill -USR1 -x sxhkd
 
 # common programs
-super + {f,w}
-	{alacritty -e ranger, brave}
+super + {f,w,e}
+	{nemo, brave, emacs}
 Print
 	flameshot gui
 
