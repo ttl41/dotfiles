@@ -11,6 +11,12 @@ local awful = require("awful")
 local wibox = require("wibox")
 local dpi   = require("beautiful.xresources").apply_dpi
 
+foreground_color = "#EBDBB2"
+foreground_color_alt = "#D5C4A1"
+
+background_color = "#282828"
+background_color_alt = "#3C3836"
+
 local os = os
 local my_table = awful.util.table or gears.table -- 4.{0,1} compatibility
 
@@ -18,18 +24,18 @@ local theme                                     = {}
 theme.default_dir                               = require("awful.util").get_themes_dir() .. "default"
 theme.dir                                       = os.getenv("HOME") .. "/.config/awesome/themes/rainbow"
 theme.wallpaper                                 = "/home/beltza/Pictures/Wallpapers/tsaiwolf.jpg"
-theme.font                                      = "Ubuntu 11"
-theme.fg_normal                                 = "#9E9E9E"
+theme.font                                      = "RobotoMono Nerd Font 11"
+theme.fg_normal                                 = foreground_color 
 theme.fg_focus                                  = "#EBEBFF"
-theme.bg_normal                                 = "#2E3440"
-theme.bg_focus                                  = "#3B4252"
+theme.bg_normal                                 = background_color
+theme.bg_focus                                  = background_color_alt
 theme.fg_urgent                                 = "#000000"
 theme.bg_urgent                                 = "#FFFFFF"
-theme.border_width                              = dpi(0)
-theme.border_normal                             = "#242424"
-theme.border_focus                              = "#EBEBFF"
-theme.taglist_fg_focus                          = "#EDEFFF"
-theme.taglist_bg_focus                          = "#3B4252"
+theme.border_width                              = dpi(8)
+theme.border_normal                             = "#3C3836"
+theme.border_focus                              = "#665C54"
+theme.taglist_fg_focus                          = foreground_color_alt
+theme.taglist_bg_focus                          = background_color_alt
 theme.menu_height                               = dpi(16)
 theme.menu_width                                = dpi(140)
 theme.ocol                                      = "<span color='" .. theme.fg_normal .. "'>"
@@ -43,7 +49,7 @@ theme.awesome_icon                              = theme.dir .."/icons/awesome.pn
 theme.menu_submenu_icon                         = theme.dir .."/icons/submenu.png"
 theme.taglist_squares_sel                       = theme.dir .. "/icons/square_sel.png"
 theme.taglist_squares_unsel                     = theme.dir .. "/icons/square_unsel.png"
-theme.useless_gap                               = dpi(10)
+theme.useless_gap                               = dpi(12)
 theme.layout_txt_tile                           = "[t]"
 theme.layout_txt_tileleft                       = "[l]"
 theme.layout_txt_tilebottom                     = "[b]"

@@ -9,9 +9,9 @@ function run {
 # run picom
 run ~/.config/polybar/launch.sh
 run /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
-feh --bg-fill ~/Pictures/Wallpapers/general/louise-pilgaard-4muj7Br-O4U-unsplash.jpg
+~/.fehbg
 run redshift 
 xset r rate 300 50
 setxkbmap -option caps:escape
 run dunst
-run /home/beltza/.config/doubleborders.sh
+run /home/beltza/.config/bspwm/doubleborders.sh

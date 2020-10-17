@@ -152,7 +152,7 @@ local tasklist_buttons = gears.table.join(
 awful.screen.connect_for_each_screen(function(s)
 
     -- Each screen has its own tag table.
-    awful.tag({ "一", "二", "三", "四", "五"}, s, awful.layout.layouts[1])
+    awful.tag({ "  ", "  ", "  ", "  ", "  "}, s, awful.layout.layouts[1])
 
     -- Create a promptbox for each screen
     s.mypromptbox = awful.widget.prompt()
@@ -170,16 +170,26 @@ awful.screen.connect_for_each_screen(function(s)
     -- Create a tasklist widget
     s.mytasklist = awful.widget.tasklist(s, awful.widget.tasklist.filter.currenttags, tasklist_buttons)
 
+    -- Create the wibox
+   s.mywibox = awful.wibar({ position = "top", screen = s })
 
 
+    -- Add widgets to the wibox
+    s.mywibox:setup {
+        layout = wibox.layout.align.horizontal,
+        { -- Left widgets
+            layout = wibox.layout.fixed.horizontal,
+            s.mytaglist,
+            s.mypromptbox,
+        },
+        s.mytasklist, -- Middle widget
+        { -- Right widgets
+            layout = wibox.layout.fixed.horizontal,
+            wibox.widget.systray(),
+            mytextclock,
+        },
+    }
 end)
--- }}}
-
--- {{{ Mouse bindings
-root.buttons(gears.table.join(
-    awful.button({ }, 4, awful.tag.viewnext),
-    awful.button({ }, 5, awful.tag.viewprev)
-))
 -- }}}
 
 -- {{{ Key bindings
@@ -301,6 +311,12 @@ globalkeys = gears.table.join(
             awful.util.spawn("brave", false)
         end,
         {description = "open brave window", group = "launcher"}
+    ),
+    awful.key({ modkey,           }, "e",
+        function ()
+            awful.util.spawn("emacs", false)
+        end,
+        {description = "open emacs window", group = "launcher"}
     ),
     awful.key({modkey,            }, "space",
        function ()
@@ -552,4 +568,4 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 
 -- Autostart Applications
 
-awful.spawn.with_shell("~/.config/autorun.sh")
+awful.spawn.with_shell("~/.config/awesome/autorun.sh")
