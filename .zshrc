@@ -7,9 +7,9 @@ fi
 source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme /home/beltza/.zshrc
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+ZSH_AUTOSUGGEST_STRATEGY=(completion history)
 source ~/.zsh/zsh-syntax/zsh-syntax-highlighting.zsh
-alias v=vim
+alias v=nvim
 alias t=toopy
 alias doom=$HOME/.emacs.d/bin/doom
 alias nf=neofetch
