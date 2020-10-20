@@ -21,7 +21,7 @@ super + Escape
 
 # common programs
 super + {f,w,e}
-	{nemo, brave, emacs}
+	{nemo, brave, alacritty -e "nvim"}
 Print
 	flameshot gui
 
