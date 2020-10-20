@@ -39,18 +39,20 @@ Plug 'mhinz/vim-startify'
 call plug#end()
 
 " Keybindings
+" " Leader key
+let mapleader = "\<Space>"
 " " init.vim stuff
-noremap <space>vr :so $MYVIMRC<CR>
-noremap <space>ve :edit $MYVIMRC<CR>
+noremap <Leader>vr :so $MYVIMRC<CR>
+noremap <Leader>ve :edit $MYVIMRC<CR>
 " " Misc
-noremap <space>vn :set relativenumber!<CR>
+noremap <Leader>vn :set relativenumber!<CR>
 " " Terminal 
 tnoremap <Esc> <C-\><C-n>
-noremap <space>vt :term<CR>
+noremap <Leader>vt :term<CR>
 " " Windows
-noremap <space>w <C-w>
+noremap <Leader>w <C-w>
 " " Buffers
-noremap <space>bb :ls<CR>:b 
+noremap <Leader>bb :ls<CR>:b 
 " " Files 
-noremap <space>op :NERDTree<CR>
-noremap <space>;; :edit 
+noremap <Leader>op :NERDTree<CR>
+noremap <Leader>;; :edit 
