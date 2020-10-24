@@ -56,3 +56,5 @@ noremap <Leader>bb :ls<CR>:b
 " " Files 
 noremap <Leader>op :NERDTree<CR>
 noremap <Leader>;; :edit 
+" " Retarded Azerty remaps
+nnoremap ù %
