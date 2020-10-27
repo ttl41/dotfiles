@@ -17,3 +17,4 @@ alias nf=neofetch
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias ytmp3='youtube-dl --extract-audio --audio-format mp3'
 alias gpp="g++"
+alias threehours='touch -d "3 hours ago"'

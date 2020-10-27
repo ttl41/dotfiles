@@ -24,6 +24,16 @@ set noswapfile
 " Increase undo levels
 set undolevels=1000
 
+" Change indentation settings 
+set autoindent
+set smartindent
+set expandtab
+set shiftwidth=4
+set tabstop=4
+
+" Disable annoying thing
+set completeopt-=preview
+
 " Setting a nice start screen
 let g:startify_lists = [
   \ { 'type': 'files',     'header': ['   Recent Files']            },
@@ -33,9 +43,11 @@ let g:startify_lists = [
 " Plugins
 call plug#begin()
 Plug 'preservim/nerdtree'
-Plug 'jiangmiao/auto-pairs'
 Plug 'ThePrimeagen/vim-be-good'
+Plug 'jiangmiao/auto-pairs'
 Plug 'mhinz/vim-startify'
+Plug 'ycm-core/YouCompleteMe'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 " Keybindings
@@ -51,10 +63,24 @@ tnoremap <Esc> <C-\><C-n>
 noremap <Leader>vt :term<CR>
 " " Windows
 noremap <Leader>w <C-w>
+noremap <Leader>j <C-w>j
+noremap <Leader>k <C-w>k
+noremap <Leader>l <C-w>l
+noremap <Leader>h <C-w>h
+" " Tabs
+noremap <Leader>to :tabnew<CR>
+noremap <Leader>tO :-tabnew<CR>
+noremap <Leader>tt :tabnext<CR>
+noremap <Leader>tr :tabnext -<CR>
+noremap <Leader>tl :$tabnext <CR>
+noremap <Leader>tc :tabclose<CR>
+" " YCM
+noremap <silent> <Leader>gd :YcmCompleter GoTo<CR>
+noremap <silent> <Leader>gf :YcmCompleter FixIt<CR> 
 " " Buffers
 noremap <Leader>bb :ls<CR>:b 
 " " Files 
-noremap <Leader>op :NERDTree<CR>
+noremap <Leader>op :NERDTreeToggle<CR>
 noremap <Leader>;; :edit 
 " " Retarded Azerty remaps
 nnoremap ù %
