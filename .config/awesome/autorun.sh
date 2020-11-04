@@ -10,5 +10,5 @@ function run {
 run /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
 ~/.fehbg
 run redshift 
-xset r rate 300 50
+xset r rate 200 60
 setxkbmap -option caps:escape

@@ -1,13 +1,26 @@
-let g:startify_custom_header  = [
-\ '    888888ba                             oo            ',
-\ '    88     8b                                          ',
-\ '    88     88 .d8888b. .d8888b. dP   .dP dP 88d8b.d8b. ',
-\ '    88     88 88ooood8 88    88 88   d8  88 88 `88  88 ',
-\ '    88     88 88.  ... 88.  .88 88 .88   88 88  88  88 ',
-\ '    dP     dP  88888P  `88888P  8888P    dP dP  dP  dP ',
-\'',
-\ ]
+if exists('g:vscode')
+" Plugins
+call plug#begin()
+Plug 'jiangmiao/auto-pairs'
+call plug#end()
+" Big Undo
+set undolevels=1000
+" Change indentation settings 
+set autoindent
+set smartindent
+set expandtab
+set shiftwidth=4
+set tabstop=4
+" Disable useless backups
+set nobackup
+set nowritebackup
+set noswapfile
+else
 
+
+" Actual Vim settings
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " Taking care of colors
 set termguicolors
 colorscheme gruvbox
@@ -31,26 +44,30 @@ set expandtab
 set shiftwidth=4
 set tabstop=4
 
+" Debugging saves the day
+autocmd VimEnter * packadd termdebug
+"
 " Disable annoying thing
 set completeopt-=preview
 
-" Setting a nice start screen
-let g:startify_lists = [
-  \ { 'type': 'files',     'header': ['   Recent Files']            },
-  \ { 'type': 'commands',  'header': ['   Commands']       },
-  \ ]
+" Disabled useless nerdtree thingy + pretty
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrow = 1
 
 " Plugins
 call plug#begin()
 Plug 'preservim/nerdtree'
 Plug 'ThePrimeagen/vim-be-good'
 Plug 'jiangmiao/auto-pairs'
-Plug 'mhinz/vim-startify'
 Plug 'ycm-core/YouCompleteMe'
 Plug 'tpope/vim-fugitive'
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 call plug#end()
 
-" Keybindings
+" Keybindings / Stuff
 " " Leader key
 let mapleader = "\<Space>"
 " " init.vim stuff
@@ -77,10 +94,21 @@ noremap <Leader>tc :tabclose<CR>
 " " YCM
 noremap <silent> <Leader>gd :YcmCompleter GoTo<CR>
 noremap <silent> <Leader>gf :YcmCompleter FixIt<CR> 
+" " Termdebug
+noremap <Leader>dd :Break<CR>
+noremap <Leader>dc :Clear<CR>
+noremap <Leader>dt :Termdebug 
 " " Buffers
 noremap <Leader>bb :ls<CR>:b 
 " " Files 
 noremap <Leader>op :NERDTreeToggle<CR>
 noremap <Leader>;; :edit 
+" " No folding
+let g:vim_markdown_folding_disabled = 1
+" " Goyo + limelight
+noremap <Leader>ll :Goyo<CR>
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
 " " Retarded Azerty remaps
 nnoremap ù %
+endif

@@ -1,4 +1,3 @@
-toopy --onlyprint
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
@@ -16,5 +15,4 @@ alias doom=$HOME/.emacs.d/bin/doom
 alias nf=neofetch
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias ytmp3='youtube-dl --extract-audio --audio-format mp3'
-alias gpp="g++"
 alias threehours='touch -d "3 hours ago"'
