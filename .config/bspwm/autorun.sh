@@ -14,4 +14,4 @@ run redshift
 xset r rate 200 60
 setxkbmap -option caps:escape
 run dunst
-run /home/beltza/.config/bspwm/doubleborders.sh
+#run /home/beltza/.config/bspwm/doubleborders.sh

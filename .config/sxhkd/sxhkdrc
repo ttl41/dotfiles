@@ -21,9 +21,11 @@ super + Escape
 
 # common programs
 super + {f,w,e}
-	{nemo, brave, alacritty -e "nvim"}
+	{nemo, firefox-nightly, alacritty -e "nvim"}
 Print
 	flameshot gui
+super + {F1, F2, F3, F4, F5, F6}
+    {krita, discocss, steam, keepassxc, firejail teams, firejail zoom}
 
 
 # volume keys
