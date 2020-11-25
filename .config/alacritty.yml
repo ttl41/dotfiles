@@ -1,19 +1,7 @@
-# Copyright (c) 2017-present Arctic Ice Studio <development@arcticicestudio.com>
-# Copyright (c) 2017-present Sven Greb <code@svengreb.de>
-
-# Project:    Nord Alacritty
-# Version:    0.1.0
-# Repository: https://github.com/arcticicestudio/nord-alacritty
-# License:    MIT
-# References:
-#   https://github.com/alacritty/alacritty
-
-# Font configuration (changes require restart)
-# Colors (Gruvbox dark)
 window:
   padding:
-    x: 10
-    y: 10
+    x: 8 
+    y: 8
 colors:
   # Default colors
   primary:
@@ -30,7 +18,7 @@ colors:
     yellow:  '#d79921'
     blue:    '#458588'
     magenta: '#b16286'
-    cyan:    '#689d6a'
+    cyan:    '#689d6a' 
     white:   '#a89984'
 
   # Bright colors
@@ -48,19 +36,19 @@ font:
   size: 12
   # The normal (roman) font face to use.
   normal:
-    family: RobotoMono Nerd Font 
+    family: JetbrainsMono Nerd Font
     # Style can be specified to pick a specific face.
     style: Regular
 
   # The bold font face
   bold:
-    family: RobotoMono Nerd Font 
+    family: Jetbrains Mono 
     # Style can be specified to pick a specific face.
-    # style: Bold
+    style: Bold
 
   # The italic font face
   italic:
-    family: RobotoMono Nerd Font 
+    family: Jetbrains Mono 
     # Style can be specified to pick a specific face.
-    # style: Italic
+    style: Italic
 

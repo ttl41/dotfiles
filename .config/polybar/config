@@ -30,6 +30,8 @@ purple = #b16286
 
 [bar/example]
 monitor = ${env:MONITOR:eDP-1-1}
+tray-position = right
+tray-padding = 2
 separator = |
 width = 100%
 height = 22
@@ -53,9 +55,9 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = RobotoMono Nerd Font:pixelsize=12;1
-font-1 = RobotoMono Nerd Font:fontformat=truetype:size=8:antialias=false;0
-font-2 = RobotoMono Nerd Font:pixelsize=12;1
+font-0 = JetbrainsMono Nerd Font:pixelsize=12;1
+font-1 = JetbrainsMono Nerd Font:fontformat=truetype:size=8:antialias=false;0
+font-2 = JetbrainsMono Nerd Font:pixelsize=12;1
 
 modules-left = bspwm 
 modules-right = date memory cpu temperature
@@ -102,9 +104,9 @@ padding-right = 1
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = RobotoMono Nerd Font:pixelsize=12;1
-font-1 = RobotoMono Nerd Font:fontformat=truetype:size=8:antialias=false;0
-font-2 = RobotoMono Nerd Font:pixelsize=12;1
+font-0 = JetbrainsMono Nerd Font:pixelsize=12;1
+font-1 = JetbrainsMono Nerd Font:fontformat=truetype:size=8:antialias=false;0
+font-2 = JetbrainsMono Nerd Font:pixelsize=12;1
 
 modules-left = bspwm 
 modules-right = date memory cpu temperature
