@@ -35,11 +35,10 @@ noremap <Leader>bb :Buffers<CR>
 noremap <Leader>op :NERDTreeToggle<CR>
 nnoremap <leader>gf :GFiles<CR>
 nnoremap <leader>ff :Files<CR>
-nnoremap <leader>hh :History<CR>
+nnoremap <leader>fh :History<CR>
 nnoremap <leader>rg :Rg<CR>
 
-let g:vim_markdown_folding_disabled = 1
-
+" goyo
 noremap <Leader>gg :Goyo<CR>
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
