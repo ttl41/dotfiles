@@ -22,6 +22,10 @@ export HISTSIZE=100000000000
 export HISTFILE=~/.zsh_history
 export SAVEHIST=100000000000 
 
+ZSH_HIGHLIGHT_STYLES[alias]='fg=magenta,bold'
+ZSH_HIGHLIGHT_STYLES[command]='fg=magenta,bold'
+ZSH_HIGHLIGHT_STYLES[builtin]='fg=magenta,bold'
+
 setopt HIST_FIND_NO_DUPS
 # following should be turned off, if sharing history via setopt SHARE_HISTORY
 setopt INC_APPEND_HISTORY
