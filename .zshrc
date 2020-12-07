@@ -1,12 +1,6 @@
 fortune
 export PATH="$HOME/go/bin:$PATH"
 todo
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
-source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme /home/beltza/.zshrc
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 export EDITOR=nvim
 source ~/.zsh/zsh-syntax/zsh-syntax-highlighting.zsh
@@ -31,3 +25,4 @@ export SAVEHIST=100000000000
 setopt HIST_FIND_NO_DUPS
 # following should be turned off, if sharing history via setopt SHARE_HISTORY
 setopt INC_APPEND_HISTORY
+eval "$(starship init zsh)"
