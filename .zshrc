@@ -30,3 +30,5 @@ setopt HIST_FIND_NO_DUPS
 # following should be turned off, if sharing history via setopt SHARE_HISTORY
 setopt INC_APPEND_HISTORY
 eval "$(starship init zsh)"
+eval $(thefuck --alias)
+
