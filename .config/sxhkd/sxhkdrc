@@ -105,8 +105,6 @@ super + {o,i}
 
 # focus or send to the given desktop
 super + {_,shift + }{ampersand,eacute,quotedbl,apostrophe,parenleft}}
-	bspc {desktop -f,node -d} '^{6-9,10}'
-super + ctrl + {_,shift + }{ampersand,eacute,quotedbl,apostrophe,parenleft,minus,egrave,exclam,ccedilla,agrave}}
 	bspc {desktop -f,node -d} '^{1-5,10}'
 
 #

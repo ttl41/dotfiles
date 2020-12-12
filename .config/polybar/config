@@ -29,7 +29,6 @@ alert = #fabd2f
 purple = #b16286
 
 [bar/example]
-monitor = ${env:MONITOR:eDP-1-1}
 tray-position = right
 tray-padding = 2
 separator = | 
@@ -78,57 +77,6 @@ modules-center = pulseaudio spotify xwindow
 
 cursor-click = pointer
 cursor-scroll = ns-resize
-
-[bar/example2]
-monitor = ${env:MONITOR:HDMI-1-2}
-separator = |
-width = 100%
-height = 22
-;offset-x = 1%
-;offset-y = 1%
-radius = 0.0
-fixed-center = true 
-
-background = ${colors.background}
-foreground = ${colors.foreground}
-
-line-size = 0
-line-color = #5E81AC
-
-border-size = 0
-border-color = #81A1C1 
-
-padding-left = 0
-padding-right = 1
-
-module-margin-left = 1
-module-margin-right = 1
-
-font-0 = JetbrainsMono Nerd Font:pixelsize=12;1
-font-1 = JetbrainsMono Nerd Font:fontformat=truetype:size=8:antialias=false;0
-font-2 = JetbrainsMono Nerd Font:pixelsize=12;1
-
-modules-left = bspwm 
-modules-right = date memory cpu temperature
-modules-center = pulseaudio spotify xwindow 
-;tray-background = #0063ff
-
-;wm-restack = bspwm
-;wm-restack = i3
-
-;override-redirect = true
-
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
-
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
-
-
-
-cursor-click = pointer
-tray-position = right
-tray-padding = 2
 
 [module/spotify]
 type = custom/script
