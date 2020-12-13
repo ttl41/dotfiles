@@ -16,7 +16,7 @@ This repo contains the dotfiles I currently use, updated every so often.
 
 ### neovim
 
-Install `neovim-git` from the AUR (preferred), or just install `neovim` from you regular package manager. Copy the nvim folder to your own .config folder, then launch nvim, and execute `:PlugInstall` to install all the plugins.
+Install `neovim-git` from the AUR (preferred), or just install `neovim` from your regular package manager. Copy the nvim folder to your own .config folder, then launch nvim, and execute `:PlugInstall` to install all the plugins.
 
 Check out `.config/nvim/scripts` to learn more about the keybinds, plugins, etc.
 
