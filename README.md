@@ -28,7 +28,7 @@ I would recommend checking the scripts in the `.config/bspwm` folder to manage a
 
 ### alacritty
 
-Install the `alacritty` package, or the `alacritty-ligatures` (AUR) packages if you want to use ligatures in your favourite font. Copy the `alacritty.yml` find to your .config folder, then edit it in order to choose your favourite font (I personally chose to use the JetbrainsMono Nerd Font).
+Install the `alacritty` package, or the `alacritty-ligatures` (AUR) packages if you want to use ligatures in your favourite font. Copy the `alacritty.yml` file to your .config folder, then edit it in order to choose your favourite font (I personally chose to use the JetbrainsMono Nerd Font).
 
 ### zsh
 
