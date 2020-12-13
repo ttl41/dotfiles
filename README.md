@@ -1,6 +1,6 @@
 # beltza's dotfiles
 
-This repo contains the dotfiles I currently used, update every so often.
+This repo contains the dotfiles I currently use, updated every so often.
 
 ## This repo provides my dots for...
 
@@ -32,6 +32,6 @@ Install the `alacritty` package, or the `alacritty-ligatures` (AUR) packages if 
 
 ### zsh
 
-Install zsh and make it your default shell. Then, install `zsh-autosuggestions` and `zsh-syntax-highlighting` to get all the fancy stuff I like. Also install `fzf` to have the nice fuzzy finder keybindings.
+Install zsh and make it your default shell. Then, install `zsh-autosuggestions` and `zsh-syntax-highlighting` with the manual install method to get all the fancy stuff I like. Also install `fzf` to have the nice fuzzy finder keybindings.
 
 To get the prompt working, you'll need to install [starship prompt](https://starship.rs/), and copy the `starship.toml` file to your .config. Once that's done, also make sure you have `thefuck` and `fortune` installed for the best experience.
