@@ -30,9 +30,9 @@ super + {F1, F2, F3, F4, F5, F6}
 
 # volume keys
 XF86AudioLowerVolume
-	amixer -q -D pulse sset Master 5%-
+	amixer -q -D pulse set Master 5%-
 XF86AudioRaiseVolume
-	amixer -q -D pulse sset Master 5%+
+	amixer -q -D pulse set Master 5%+
 XF86AudioMute
 	amixer -q -D pulse set Master 1+ toggle 
 #
