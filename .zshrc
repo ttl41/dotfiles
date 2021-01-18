@@ -16,6 +16,7 @@ alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias ytmp3='youtube-dl --extract-audio --audio-format mp3'
 alias threehours='touch -d "3 hours ago"'
 alias py=python
+alias r=ranger
 source /usr/share/fzf/key-bindings.zsh
 
 # we will make history!
