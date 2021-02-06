@@ -34,7 +34,7 @@ colors:
     white:   '#ebdbb2'
 font:
   # The size to use
-  size: 12
+  size: 10.5 
   # The normal (roman) font face to use.
   normal:
     family: JetbrainsMono Nerd Font

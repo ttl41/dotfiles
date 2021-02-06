@@ -11,7 +11,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
-Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline'
 "Plug 'hugolgst/vimsence'
 Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }

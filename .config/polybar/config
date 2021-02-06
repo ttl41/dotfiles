@@ -19,7 +19,7 @@
 [colors]
 ;background = ${xrdb:color0:#222}
 background = #CB282828
-background-alt = #b16286
+background-alt = #CB3C3836
 ;foreground = ${xrdb:color7:#222}
 foreground = #EBDBB2
 foreground-alt = #d5c4a1
@@ -61,6 +61,56 @@ font-2 = JetbrainsMono Nerd Font:pixelsize=12;1
 modules-left = bspwm 
 modules-right = date memory cpu temperature
 modules-center = pulseaudio spotify xwindow 
+
+;tray-background = #0063ff
+
+;wm-restack = bspwm
+;wm-restack = i3
+
+;override-redirect = true
+
+;scroll-up = bspwm-desknext
+;scroll-down = bspwm-deskprev
+
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[bar/plank]
+tray-position =
+tray-padding = 2
+separator = | 
+width = 16.5%
+height = 30
+offset-x = 1%
+offset-y = 1%
+radius = 10.0
+fixed-center = true 
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 0
+line-color = #5E81AC
+
+border-size = 0
+border-color = #81A1C1 
+
+padding-left = 0
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = JetbrainsMono Nerd Font:pixelsize=12;1
+font-1 = JetbrainsMono Nerd Font:fontformat=truetype:size=8:antialias=false;0
+font-2 = JetbrainsMono Nerd Font:pixelsize=12;1
+
+modules-left = bspwm 
+modules-right =
+modules-center = 
 
 ;tray-background = #0063ff
 

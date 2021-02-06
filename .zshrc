@@ -1,4 +1,3 @@
-fortune
 export PATH="$HOME/go/bin:$PATH"
 todo
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
