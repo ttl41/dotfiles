@@ -11,7 +11,9 @@ run ~/.config/polybar/launch.sh
 run /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
 ~/.fehbg
 run redshift 
+run dunst
+sleep 5
 xset r rate 200 60
 setxkbmap -option caps:escape
-run dunst
+pactl load-module module-udev-detect
 #run /home/beltza/.config/bspwm/doubleborders.sh

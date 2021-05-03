@@ -2,6 +2,7 @@ export PATH="$HOME/go/bin:$PATH"
 todo
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 export EDITOR=nvim
+export STEAM_COMPAT_DATA_PATH=~/.proton/
 source ~/.zsh/zsh-syntax/zsh-syntax-highlighting.zsh
 export ZSH_AUTOSUGGEST_STRATEGY=(history)
 export GOPATH=$HOME/go
@@ -27,6 +28,7 @@ export SAVEHIST=100000000000
 ZSH_HIGHLIGHT_STYLES[alias]='fg=magenta,bold'
 ZSH_HIGHLIGHT_STYLES[command]='fg=magenta,bold'
 ZSH_HIGHLIGHT_STYLES[builtin]='fg=magenta,bold'
+setopt histignorealldups
 
 setopt HIST_FIND_NO_DUPS
 # following should be turned off, if sharing history via setopt SHARE_HISTORY

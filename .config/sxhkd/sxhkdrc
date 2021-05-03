@@ -10,6 +10,10 @@ super + Return
 super + @space
 	rofi -show run
 
+# toggle polybar
+super + dollar
+    ~/.config/bspwm/toggle_bar.sh
+
 # htop task manager like binding
 ctrl + shift + Escape 
 	alacritty -e htop
@@ -21,7 +25,7 @@ super + Escape
 
 # common programs
 super + {f,w,e}
-	{nemo, firefox-developer-edition, alacritty -e "nvim"}
+	{nemo, brave, alacritty -e "nvim"}
 super + shift + w
     {torbrowser-launcher}
 Print
