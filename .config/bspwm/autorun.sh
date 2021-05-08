@@ -8,7 +8,7 @@ function run {
 }
 # run picom
 run ~/.config/polybar/launch.sh
-run /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
+run /usr/bin/lxpolkit
 ~/.fehbg
 run redshift 
 run dunst
