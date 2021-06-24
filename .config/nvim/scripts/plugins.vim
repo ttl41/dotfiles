@@ -17,7 +17,9 @@ Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
-Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
+Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
+Plug 'xuhdev/vim-latex-live-preview'
+let g:livepreview_previewer = 'zathura'
 call plug#end()

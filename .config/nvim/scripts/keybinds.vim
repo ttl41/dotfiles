@@ -30,6 +30,9 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
+" latex
+noremap <Leader>lx :LLPStartPreview<CR>
+
 " Searching Files
 noremap <Leader>bb :Buffers<CR> 
 noremap <Leader>op :NERDTreeToggle<CR>

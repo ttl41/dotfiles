@@ -57,9 +57,8 @@ font-0 = JetbrainsMono Nerd Font:pixelsize=12;1
 font-1 = JetbrainsMono Nerd Font:fontformat=truetype:size=8:antialias=false;0
 font-2 = JetbrainsMono Nerd Font:pixelsize=12;1
 
-modules-left = bspwm 
-modules-right = date memory cpu temperature
-modules-center = pulseaudio spotify xwindow 
+modules-left = rofi bspwm xwindow 
+modules-right = pulseaudio memory cpu date
 
 ;tray-background = #0063ff
 
@@ -135,10 +134,15 @@ cursor-scroll = ns-resize
 ;exec = python /home/beltza/.config/polybar/spotify.py -f '{artist}: {song}'
 ;format-underline = #1db954
 
+[module/rofi]
+type = custom/text
+content = "  "
+click-left = rofi -show run
+
 [module/xwindow]
 type = internal/xwindow
 label = %title:0:30:...%
-label-empty = (empty)
+label-empty = ()
 
 [module/xkeyboard]
 type = internal/xkeyboard
@@ -186,7 +190,7 @@ label-empty-foreground = ${colors.foreground-alt}
 label-empty-padding = 2
 
 ; Separator in between workspaces
-label-separator =|
+label-separator = 
 
 [module/i3]
 type = internal/i3
@@ -298,10 +302,8 @@ type = internal/date
 interval = 5
 
 date =%a, %b %d,
-date-alt =%k:%M 
 
 time = %H:%M
-time-alt = %H:%M:%S
 
 format-prefix =
 format-prefix-foreground = ${colors.foreground-alt}
@@ -312,12 +314,12 @@ label =%date% %time%
 [module/pulseaudio]
 type = internal/pulseaudio
 
-format-volume =<label-volume><bar-volume>
+format-volume =墳
 label-volume =%percentage%%
 label-volume-foreground = ${root.foreground}
 
 label-muted =婢 
-label-muted-foreground = #666
+label-muted-foreground = #999
 
 bar-volume-width = 20
 bar-volume-foreground-0 = #55aa55
