@@ -18,7 +18,9 @@
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #CB282828 background-alt = #CB3C3836
+background = #CB282828
+background-notras = #282828
+background-alt = #CB3C3836
 ;foreground = ${xrdb:color7:#222}
 foreground = #EBDBB2
 foreground-alt = #d5c4a1
@@ -136,8 +138,9 @@ cursor-scroll = ns-resize
 
 [module/rofi]
 type = custom/text
-content = "  "
+content = ""
 click-left = rofi -show run
+content-padding = 2
 
 [module/xwindow]
 type = internal/xwindow
