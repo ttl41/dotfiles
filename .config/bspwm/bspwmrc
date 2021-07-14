@@ -27,4 +27,6 @@ picom --experimental-backend &
 /home/beltza/.config/bspwm/autorun.sh
 xsetroot -cursor_name left_ptr
 killall -q sxhkd
-sxhkd
+sxhkd &
+sleep 1
+setxkbmap -variant bepo
