@@ -12,9 +12,8 @@ run /usr/bin/lxpolkit
 ~/.fehbg
 run redshift 
 run dunst
-run plover
 sleep 5
 xset r rate 200 60
 setxkbmap -option caps:escape
-run onboard
+#run onboard
 #run /home/beltza/.config/bspwm/doubleborders.sh
