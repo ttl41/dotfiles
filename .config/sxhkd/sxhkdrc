@@ -1,6 +1,10 @@
 #
 # wm independent hotkeys
 #
+#
+
+alt + space
+    ~/.scripts/layoutswitch.py
 
 # terminal emulator
 super + Return

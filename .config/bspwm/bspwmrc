@@ -29,4 +29,5 @@ xsetroot -cursor_name left_ptr
 killall -q sxhkd
 sxhkd &
 sleep 1
-setxkbmap -variant bepo
+setxkbmap adextre
+setxkbmap -option keypad:pointerkeys

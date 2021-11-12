@@ -1,4 +1,4 @@
-export PATH="$HOME/.scripts:$HOME/go/bin:$PATH"
+export PATH="$HOME/.scripts:$HOME/go/bin:$PATH:$HOME/.local/bin"
 todo
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 export EDITOR=nvim
