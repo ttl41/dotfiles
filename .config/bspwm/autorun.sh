@@ -10,11 +10,12 @@ function run {
 run ~/.config/polybar/launch.sh
 run /usr/bin/lxpolkit
 ~/.fehbg
-run redshift 
 run dunst
 sleep 5
 xset r rate 200 60
 setxkbmap -option caps:escape
-run premid
-run onboard
+run sh -c '/usr/bin/nvidia-settings --load-config-only'
+run /usr/lib/nvidia-prime-applet/nvidia-prime
+run redshift 
+run picom --experimental-backend --log-file ~/.config/picom/picom.log
 #run /home/beltza/.config/bspwm/doubleborders.sh

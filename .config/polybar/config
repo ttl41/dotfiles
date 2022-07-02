@@ -138,7 +138,7 @@ cursor-scroll = ns-resize
 
 [module/rofi]
 type = custom/text
-content = ""
+content = ""
 click-left = rofi -show run
 content-padding = 2
 

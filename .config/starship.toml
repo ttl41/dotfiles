@@ -22,9 +22,6 @@ symbol = " "
 style = "bold purple"
 read_only = " "
 
-[docker]
-symbol = " "
-
 [elixir]
 symbol = " "
 

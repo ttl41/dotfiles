@@ -4,6 +4,11 @@ hi Normal guibg=NONE ctermbg=NONE
 let g:airline_powerline_fonts = 1
 let g:Hexokinase_highlighters = ['backgroundfull']
 
+"augroup SyntaxSettings
+"    autocmd!
+"    autocmd BufNewFile,BufRead *.tsx set filetype=typescript
+"augroup END
+
 set termguicolors
 
 "set completeopt-=preview

@@ -1,5 +1,4 @@
 export PATH="$HOME/.scripts:$HOME/go/bin:$PATH:$HOME/.local/bin"
-todo
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 export EDITOR=nvim
 export STEAM_COMPAT_DATA_PATH=~/.proton/
@@ -13,11 +12,10 @@ alias doom=$HOME/.emacs.d/bin/doom
 alias nf=neofetch
 alias nfull="neofetch --config none"
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias ytmp3='youtube-dl --extract-audio --audio-format mp3'
+alias ytmp3='yt-dlp --extract-audio --audio-format mp3'
 alias threehours='touch -d "3 hours ago"'
 alias py=python
 alias r=ranger
-source /usr/share/fzf/key-bindings.zsh
 
 # we will make history!
 export HISTFILESIZE=100000000000
@@ -34,5 +32,9 @@ setopt HIST_FIND_NO_DUPS
 # following should be turned off, if sharing history via setopt SHARE_HISTORY
 setopt INC_APPEND_HISTORY
 eval "$(starship init zsh)"
-eval $(thefuck --alias)
 
+# opam configuration
+test -r /home/beltza/.opam/opam-init/init.zsh && . /home/beltza/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
+export PNPM_HOME="/home/beltzal/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
