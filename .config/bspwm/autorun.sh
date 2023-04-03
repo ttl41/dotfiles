@@ -15,7 +15,7 @@ sleep 5
 xset r rate 200 60
 setxkbmap -option caps:escape
 run sh -c '/usr/bin/nvidia-settings --load-config-only'
-run /usr/lib/nvidia-prime-applet/nvidia-prime
 run redshift 
 run picom --experimental-backend --log-file ~/.config/picom/picom.log
+run corectrl
 #run /home/beltza/.config/bspwm/doubleborders.sh

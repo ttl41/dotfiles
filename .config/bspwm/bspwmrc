@@ -29,6 +29,6 @@ xsetroot -cursor_name left_ptr
 killall -q sxhkd
 sxhkd &
 sleep 1
-#run picom --experimental-backend &
+#picom --experimental-backend &
 setxkbmap adextre
 setxkbmap -option keypad:pointerkeys

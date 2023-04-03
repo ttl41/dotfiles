@@ -17,5 +17,6 @@ Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'xuhdev/vim-latex-live-preview'
+Plug 'dart-lang/dart-vim-plugin'
 let g:livepreview_previewer = 'zathura'
 call plug#end()
